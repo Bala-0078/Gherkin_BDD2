@@ -1,0 +1,46 @@
+
+
+
+
+
+
+module.exports = {
+  // cucumber.js
+  example: [
+    'feature/example.feature',
+    '--require',
+    'feature/step-definition'
+  ],
+
+  login:[
+    'feature/bookmyshow/User Login.feature',
+    '--require',
+    'feature/step-definition'
+  ],
+
+  search:[
+    'feature/bookmyshow/Search Functionality.feature',
+    '--require',
+    'feature/step-definition'
+  ],
+
+  amazon:[
+    'feature/amazon/search.feature',
+    '--require',
+    'feature/step-definition/amazon'
+  ],
+
+  experian:[
+    'feature/Experian/loancalculate.feature',
+    '--require',
+    'feature/step-definition/Experian',
+    '--format',
+    'html:playwright-report/experian-report.html'
+  ],
+
+  experian2:[
+    'feature/experian-loan-calculate/Personal Loan Calculator Functionality.feature',
+    '--require',
+    'feature/step-definition/experian-loan-calculate'
+  ]
+};
